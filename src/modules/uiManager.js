@@ -1,6 +1,3 @@
-import editSVG from '../assets/circle-edit-outline.svg'
-import removeSVG from '../assets/delete-outline.svg'
-import deleteSVG from '../assets/delete-circle-outline.svg'
 
 import ProjectManager from './projectManager'
 import TodoCreator from './todoCreator'
@@ -68,7 +65,7 @@ export default class uiManager {
             
             const removeButton = document.createElement('img')
             removeButton.classList.add('remove-btn')
-            removeButton.src = removeSVG
+            removeButton.src = 'assets/delete-outline.svg'
             removeButton.width = 30
 
             removeButton.addEventListener('click', () => {
@@ -368,7 +365,7 @@ export default class uiManager {
 
         // Create edit button
         const editButton = document.createElement('img')
-        editButton.src = editSVG
+        editButton.src = 'assets/circle-edit-outline.svg'
         editButton.width = 30
         // When the Edit button is clicked, show the edit form
         editButton.addEventListener('click', () => {
@@ -383,7 +380,7 @@ export default class uiManager {
 
         // Create a delete button
         const deleteButton = document.createElement('img')
-        deleteButton.src = deleteSVG
+        deleteButton.src = 'assets/delete-circle-outline.svg'
         deleteButton.width = 30
 
         deleteButton.addEventListener('click', () => {
